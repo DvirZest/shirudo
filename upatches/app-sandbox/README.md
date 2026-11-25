@@ -18,8 +18,8 @@ objects, PHP files and shell scripts; it leaves the network open,
 because a reverse proxy's upstreams are site specific. Replace them
 with sandboxes for your own applications.
 
-Its tree entry names the PHP2Shell advisories, CVE-2026-109618 and
-CVE-2026-109619, as `fixes`, so that a backend that reads the tree
+Its tree entry names the PHP2Shell advisories, CVE-2026-109618,
+CVE-2026-109619 and CVE-2026-115560, as `fixes`, so that a backend that reads the tree
 counts a node that loaded the upatch as shielded against them. The
 sandboxes do not close the hole in PHP: a request can still run the
 attacker's code in the application. They keep that code from leaving a
